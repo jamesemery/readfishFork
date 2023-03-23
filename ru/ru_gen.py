@@ -53,6 +53,15 @@ _cli = BASE_ARGS + (
             default=None,
         ),
     ),
+    (
+        "--aligner-k",
+        dict(
+            metavar="ALIGN-K",
+            type=int,
+            help="Kmer size to use for aligner chaining",
+            default=None,
+        ),
+    ),
 )
 
 
