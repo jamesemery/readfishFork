@@ -161,8 +161,8 @@ class Mapper:
     def __init__(self, index):
         self.index = index
         if self.index:
-            self.mapper = mp.Aligner(self.index, preset="map-ont", k=17, w=255)
-            print("self.index, preset=\"map-ont\", k=17, w=255")
+            self.mapper = mp.Aligner(self.index, preset="sr")
+            print("preset=sr")
             self.initialised = True
         else:
             self.mapper = None
