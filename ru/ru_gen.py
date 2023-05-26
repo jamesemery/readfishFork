@@ -299,6 +299,7 @@ def simple_analysis(
             )
 
             # Control channels
+            print(run_info)
             if conditions[run_info[channel]].control:
                 mode = "control"
                 log_decision()
