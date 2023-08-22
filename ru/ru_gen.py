@@ -299,13 +299,10 @@ def simple_analysis(
             )
 
             # Control channels
-<<<<<<< Updated upstream
-=======
             # print("run_info")
             # print(run_info)
             # print("channel = "+str(channel))
             # print(conditions)
->>>>>>> Stashed changes
             if conditions[run_info[channel]].control:
                 mode = "control"
                 log_decision()
