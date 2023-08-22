@@ -92,7 +92,7 @@ def simple_analysis(
     cl=None,
     pf=None,
     live_toml_path=None,
-    flowcell_size=512,
+    flowcell_size=3000,
     dry_run=False,
     run_info=None,
     conditions=None,
@@ -299,6 +299,13 @@ def simple_analysis(
             )
 
             # Control channels
+<<<<<<< Updated upstream
+=======
+            # print("run_info")
+            # print(run_info)
+            # print("channel = "+str(channel))
+            # print(conditions)
+>>>>>>> Stashed changes
             if conditions[run_info[channel]].control:
                 mode = "control"
                 log_decision()
@@ -461,7 +468,7 @@ def run(parser, args):
     # Parse configuration TOML
     # TODO: num_channels is not configurable here, should be inferred from client
     run_info, conditions, reference, caller_kwargs = get_run_info(
-        args.toml, num_channels=512
+        args.toml, num_channels=3000
     )
     live_toml = Path("{}_live".format(args.toml))
 
